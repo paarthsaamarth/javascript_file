@@ -41,8 +41,8 @@ console.log(typeof newsing);
 // ******************************************operations***********************************************
 
 let str1 = "nikhil"
-let str2 = "bhaskar"
-console.log(str1 + str2);
+let str2 = " bhaskar"
+console.log(str1 + str2); //nikhil bhaskar
 
 console.log("1" + 2 ); // 12  => result depend on 1st operand type, if 1st operand str then take 2nd and so on operand as str and concatenate(+) them
 console.log(1 + "2");  // 12  => here 1st operand is int then "2" is also taken as int despite 2 is written in ""

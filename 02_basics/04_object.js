@@ -60,7 +60,7 @@ users[1].email
 
 
 
-/***************************************************************************************************************************************************************************************************************** */
+/******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************* */
 
 
 //Destructuring the object.
@@ -72,17 +72,24 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course //this is the way of destructuring, and now it is no need to course.courseInstructor just write simply courseInstructor in console log , you can also change name of courseInstructor to some short name in destructuring process by writting original name in curly braces followed by : and : followed by new short name i.e. in this case {courseInstructor : instructor}
 
 // console.log(courseInstructor);
 console.log(instructor);
+//same result from just above both two consoles
 
+
+
+//this is how json looks --> what is json? --> api kya hai jo value aati hai backend se via API, pehle woh values XML(eXtensible Markup Language) format mein aati thi , lekin ab JSON(JavaScript object notation) format mein aati hai.
+//it looks like an object which has not any name and the key value both are in string format("").
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
 
+
+//jaruri nhi hai hamesa hame value JSON mein hi mile, kabhi kabar woh array ke format mein bhi milti hai jiske andar dher saare objects hote hai.
 [
     {},
     {},

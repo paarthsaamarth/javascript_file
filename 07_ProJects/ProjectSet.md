@@ -32,7 +32,7 @@ button.forEach(function (but) {
 
 ```
 
-# PROJECT 2 :- BMI Generator 
+## PROJECT 2 :- BMI Generator 
 
 ```  javascript
 
@@ -82,7 +82,7 @@ form.addEventListener('submit', function (e) {
 
  ```
 
- # PROJECT 3 :- Digital Clock 🕒 
+ ## PROJECT 3 :- Digital Clock 🕒 
 
  ``` javascript
 
@@ -96,3 +96,56 @@ setInterval(function(){
 },1000);
 
 ```
+
+## PROJECT 6 :- Random Color Generator in a Particular Intervals 
+
+``` javascript 
+
+const randomColors = function(){
+  const hex = '0123456789ABCDEF'
+  let color = '#'
+  for(let i=0; i<6; i++){
+    color += hex[Math.floor(Math.random() * 16)]//mujhe 0 bhi chaiye isliye +1 nhi kiya
+  }
+  return color;
+}
+
+const start = document.querySelector('#start')
+const stop = document.querySelector('#stop')
+
+let interval;
+start.addEventListener('click',function(){
+  const changingColor = function(){
+    document.body.style.backgroundColor = randomColors()
+  }
+  if(!interval)
+    interval = setInterval(changingColor,1500);
+})
+
+stop.addEventListener('click',function(){
+  clearInterval(interval)
+  interval = null
+})
+
+```
+
+## PROJECT 5 :- KeyBoard check whick key pressed
+
+``` javascript
+
+window.addEventListener('keydown',(e) => {
+  insert.innerHTML = `
+    <table>
+      <tr>
+        <th>key</th>
+        <th>keytype</th>
+      </tr>
+      <tr>
+        <td>${e.key === ' ' ? "spc" : e.key}</td>
+        <td>${e.code}</td>
+      </tr>
+    </table>
+  `
+})  
+
+ ```
